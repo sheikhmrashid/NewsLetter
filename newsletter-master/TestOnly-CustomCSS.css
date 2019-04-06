@@ -1,0 +1,166 @@
+THESE LINES ARE COPIED FROM DEMO-RESUME.CSS of version D5
+
+/*
+* Header
+*/
+#header.header-floating-icons .nav {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+					flex-direction: column;
+}
+#header.header-floating-icons .header-nav-main nav > ul > li {
+	-webkit-box-flex: 0;
+			-ms-flex: 0 0 auto;
+					flex: 0 0 auto;
+	margin-left: 0;
+}
+#header.header-floating-icons .header-nav-main nav > ul > li > a.active {
+	background: #FFF !important;
+}
+#header.header-floating-icons .header-nav-main nav > ul > li > a.active:after {
+	background: #FFF;
+}
+
+@media (min-width: 992px) {
+	#header.header-floating-icons {
+		background: transparent;
+		height: 0;
+		min-height: 0 !important;
+	}
+	#header.header-floating-icons .header-row {
+		display: block;
+		position: absolute;
+		top: 45px;
+		left: -40px;
+	}
+	#header.header-floating-icons .header-body {
+		position: fixed;
+		top: 0;
+		background: transparent;
+		min-height: 0;
+		padding: 0;
+		border: none;
+	}
+	#header.header-floating-icons .header-nav {
+		padding: 0 !important;
+	}
+	#header.header-floating-icons .header-nav-main {
+		margin: 0;
+		-webkit-box-shadow: 0px 0px 80px 0px rgba(62, 62, 62, 0.3);
+						box-shadow: 0px 0px 80px 0px rgba(62, 62, 62, 0.3);
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li:hover > a > span {
+		-webkit-transform: rotateY(0deg);
+						transform: rotateY(0deg);
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a {
+		font-size: 25px;
+		padding: 17.1px;
+		-webkit-perspective: 770px;
+						perspective: 770px;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 102%;
+		background: #FDD55C;
+		z-index: -1;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a > span {
+		position: absolute;
+		top: 0;
+		left: 125.5%;
+		background: #FFF;
+		padding: 0 25px;
+		height: 100%;
+		line-height: 4.1;
+		white-space: nowrap;
+		font-size: 14px;
+		z-index: -2;
+		-webkit-transition: ease transform 300ms;
+		transition: ease transform 300ms;
+		-webkit-transform-origin: -19% 0%;
+						transform-origin: -19% 0%;
+		-webkit-transform: rotateY(88deg);
+						transform: rotateY(88deg);
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a > span:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: -4px;
+		padding: 10px;
+		background: #FFF;
+		z-index: -1;
+		-webkit-transform: translate(0, -50%) rotate(45deg);
+						transform: translate(0, -50%) rotate(45deg);
+	}
+}
+@media (min-width: 992px) and (max-width: 1281px) {
+	#header.header-floating-icons .header-row {
+		left: -19px;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a {
+		padding: 9.8px;
+		-webkit-perspective: 450px;
+						perspective: 450px;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a > span {
+		line-height: 3;
+	}
+}
+@media (max-width: 991px) {
+	#header.header-floating-icons {
+		position: absolute;
+		top: 60px;
+		right: 0px;
+	}
+	#header.header-floating-icons .header-body {
+		background: transparent;
+		border: none;
+		min-height: 0;
+	}
+	#header.header-floating-icons .header-btn-collapse-nav {
+		padding: 15px 20px;
+		margin: 0;
+		color: #1e1e1e;
+	}
+	#header.header-floating-icons .header-nav-main {
+		position: absolute;
+		right: 0px;
+		top: 77px;
+		max-width: 53px;
+		overflow: hidden;
+	}
+	#header.header-floating-icons .header-nav-main:before {
+		content: none;
+	}
+	#header.header-floating-icons .header-nav-main nav {
+		padding: 0;
+		max-height: none;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul {
+		display: block;
+		padding: 0;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li {
+		display: inline-block;
+		border: none;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a {
+		font-size: 1.7em;
+		margin: 0;
+		padding: 15px;
+		color: #1e1e1e !important;
+		border-bottom-color: #FDD55C;
+	}
+	#header.header-floating-icons .header-nav-main nav > ul > li > a > span {
+		display: none;
+	}
+}
